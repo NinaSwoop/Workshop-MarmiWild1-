@@ -7,8 +7,10 @@
     </head>
     <body>
         <a href="/">Home</a>
-        <h1><?= $recipe['title'] ?></h1>
-
+        <!-- inclusion php -->
+        <h1><?= $recipe['title'] ?></h1> 
+        
+        <!-- inclusion php -->
         <div>
             <?= $recipe['description'] ?>
         </div>

@@ -7,7 +7,20 @@
     <title>Ajouter une recette</title>
 </head>
 <body>
-    <main> //action permet de dire où seront envoyées les informations
+
+<!-- Pour afficher les erreurs -->
+<?php 
+if(count($errors) > 0) {
+    echo '<ul>';
+    foreach($errors as $error) {
+echo '<li>' . $error . '</li>';
+    }
+    echo '</ul>';
+}
+?>
+
+    <main> 
+        <!-- action permet de dire où seront envoyées les informations -->
         <form action ="" method ="post" enctype="application/x-www-form-urlencoded" class="errormessages">
         <fieldset>
         <legend>Ajouter votre recette</legend>
